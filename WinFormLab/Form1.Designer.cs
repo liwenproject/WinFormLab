@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cbNearMonth = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // cbNearMonth
+            // 
+            this.cbNearMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbNearMonth.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cbNearMonth.FormattingEnabled = true;
+            this.cbNearMonth.Location = new System.Drawing.Point(21, 24);
+            this.cbNearMonth.Name = "cbNearMonth";
+            this.cbNearMonth.Size = new System.Drawing.Size(156, 28);
+            this.cbNearMonth.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(693, 345);
+            this.Controls.Add(this.cbNearMonth);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cbNearMonth;
     }
 }
 
