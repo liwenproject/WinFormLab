@@ -1,16 +1,16 @@
-﻿namespace WinFormLab
+﻿namespace WinFormLab.Ctrl
 {
-    partial class Form1
+    partial class CtrlForm
     {
         /// <summary>
-        /// 設計工具所需的變數。
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 清除任何使用中的資源。
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 設計工具產生的程式碼
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
-        /// 這個方法的內容。
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -33,22 +33,22 @@
             // 
             // cbNearMonth
             // 
-            this.cbNearMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNearMonth.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cbNearMonth.FormattingEnabled = true;
-            this.cbNearMonth.Location = new System.Drawing.Point(21, 24);
+            this.cbNearMonth.Location = new System.Drawing.Point(29, 13);
             this.cbNearMonth.Name = "cbNearMonth";
-            this.cbNearMonth.Size = new System.Drawing.Size(156, 28);
+            this.cbNearMonth.Size = new System.Drawing.Size(121, 28);
             this.cbNearMonth.TabIndex = 0;
             // 
-            // Form1
+            // CtrlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 345);
+            this.ClientSize = new System.Drawing.Size(400, 261);
             this.Controls.Add(this.cbNearMonth);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "CtrlForm";
+            this.Text = "CtrlForm";
+            this.Load += new System.EventHandler(this.CtrlForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,4 +58,3 @@
         private System.Windows.Forms.ComboBox cbNearMonth;
     }
 }
-

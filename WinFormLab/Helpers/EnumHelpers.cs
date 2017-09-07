@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;        //加入
 
-namespace WinFormLab.Extensions
+namespace WinFormLab.Helpers
 {
-    public static class EnumExtensions
+    public static class EnumHelper
     {
         public static string ToDescription<T>(this T value) where T : IConvertible
         {

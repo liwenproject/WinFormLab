@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.ComponentModel;        //Add
 using System.Windows.Forms;         //Add
 
-namespace WinFormLab.Extensions
+namespace WinFormLab.Helpers
 {
-    public static class ComboBoxExtensions
+    public static class ComboBoxHelper
     {
         /// <summary>將 Enum 載入 Combox
         /// ComboBox 的值是 Enum 的項目

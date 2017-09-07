@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormLab.Extensions;    //Add
+using WinFormLab.Helpers;    //Add
 
-namespace WinFormLab
+
+namespace WinFormLab.Ctrl
 {
-    public partial class Form1 : Form
+    public partial class CtrlForm : Form
     {
-        public Form1()
+        public CtrlForm()
         {
             InitializeComponent();
+        }
 
+        private void CtrlForm_Load(object sender, EventArgs e)
+        {
             cbNearMonth.LoadEnum<MonthNearEnum>();
-
-            Console.WriteLine(MonthNearEnum.Near1st.ToDescription());
         }
     }
 
@@ -32,5 +34,4 @@ namespace WinFormLab
         [Description("近二月")]
         Near2Months
     }
-
 }
